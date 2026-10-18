@@ -69,9 +69,25 @@ button {
 
 .wordmark,
 .footer-wordmark {
-  font-family: var(--font-display);
-  font-size: 2.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   line-height: 1;
+}
+
+.wordmark img,
+.footer-wordmark img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.wordmark {
+  color: #fff7e9;
+  text-shadow: 0 2px 12px rgb(0 0 0 / 75%);
 }
 
 .site-nav {
@@ -85,6 +101,7 @@ button {
 
 .site-nav > a:not(.nav-reserve) {
   color: rgb(255 255 255 / 83%);
+  text-shadow: 0 1px 8px rgb(0 0 0 / 85%);
   transition: color 180ms ease;
 }
 
@@ -182,7 +199,7 @@ button {
 }
 
 .hero-art {
-  background-image: url("images/front.png");
+  background-image: url("images/card 3.jpg");
   background-position: center 53%;
   background-size: cover;
   filter: saturate(0.88) sepia(0.12) contrast(1.04);
@@ -444,7 +461,7 @@ button {
   overflow: hidden;
   background:
     linear-gradient(0deg, rgb(18 11 7 / 65%), transparent 56%),
-    url("images/front.png") center 82% / cover;
+    url("images/card2.jpg") center 82% / cover;
 }
 
 .image-caption {
@@ -532,7 +549,7 @@ button {
   padding: clamp(2rem, 5vw, 4rem);
   background:
     linear-gradient(110deg, rgb(34 22 15 / 94%), rgb(48 31 20 / 94%)),
-    url("images/front.png") center / cover;
+    url("images/card1.jpg") center / cover;
   box-shadow: 0 1.4rem 3.5rem rgb(51 34 18 / 13%);
 }
 
@@ -667,7 +684,7 @@ button {
 
 .footer-wordmark {
   color: var(--cream);
-  font-size: 2rem;
+  font-size: 1.1rem;
 }
 
 .footer-location p,
@@ -686,6 +703,8 @@ button {
 }
 
 .footer-location > a {
+  display: block;
+  margin-top: 0.35rem;
   color: var(--sand);
 }
 
@@ -814,17 +833,9 @@ button {
   }
 }
 
-@media (max-width: 640px) {
-  html {
-    scroll-padding-top: 4rem;
-  }
-
+@media (max-width: 860px) {
   .site-header {
     padding: 1.15rem 1.25rem;
-  }
-
-  .wordmark {
-    font-size: 1.9rem;
   }
 
   .menu-toggle {
@@ -881,6 +892,16 @@ button {
   .nav-reserve {
     align-self: flex-start;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 4rem;
+  }
+
+  .wordmark {
+    font-size: 1.9rem;
   }
 
   .hero {
@@ -1067,19 +1088,18 @@ button {
 
 .loader-emblem {
   display: grid;
-  width: 4.4rem;
-  height: 4.4rem;
+  width: 6rem;
+  height: 6rem;
   place-items: center;
   border: 1px solid rgb(229 201 155 / 58%);
-  transform: rotate(45deg);
-  animation: loader-turn 2.8s ease-in-out infinite;
+  border-radius: 50%;
+  box-shadow: 0 0 2rem rgb(197 149 85 / 12%), inset 0 0 1.2rem rgb(197 149 85 / 9%);
+  animation: loader-turn 3.2s ease-in-out infinite;
 }
 
-.loader-emblem span {
-  color: var(--sand);
-  font-family: var(--font-display);
-  font-size: 2.2rem;
-  transform: rotate(-45deg);
+.loader-emblem img {
+  width: 3.9rem;
+  height: 3.9rem;
 }
 
 .loader-name {
@@ -1466,7 +1486,7 @@ button {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  filter: saturate(1.17) contrast(1.12) brightness(1.035);
+  filter: saturate(1.08) contrast(1.08) brightness(0.78);
   transform: translate3d(0, var(--background-parallax, 0px), 0) scale(1);
 }
 
@@ -1487,20 +1507,29 @@ button {
   background:
     linear-gradient(
       180deg,
-      rgb(25 17 12 / 46%) 0%,
-      rgb(31 20 13 / 10%) 24%,
-      rgb(30 18 11 / 9%) 60%,
-      rgb(44 34 30 / 42%) 81%,
+      rgb(17 11 8 / 64%) 0%,
+      rgb(20 13 9 / 43%) 24%,
+      rgb(20 13 9 / 38%) 60%,
+      rgb(32 23 18 / 62%) 81%,
       #2c221e 100%
     ),
-    linear-gradient(90deg, rgb(22 14 9 / 16%), transparent 20%, transparent 80%, rgb(22 14 9 / 16%));
+    linear-gradient(90deg, rgb(18 12 9 / 28%), rgb(18 12 9 / 10%) 20%, rgb(18 12 9 / 10%) 80%, rgb(18 12 9 / 28%));
 }
 
 .hero h1 {
   font-size: clamp(5.3rem, 11vw, 10.3rem);
   font-weight: 400;
   letter-spacing: 0.065em;
-  text-shadow: 0 2px 8px rgb(20 12 7 / 45%);
+  text-shadow: 0 3px 22px rgb(0 0 0 / 82%), 0 1px 3px rgb(0 0 0 / 90%);
+}
+
+.hero-arabic,
+.hero-eyebrow,
+.hero-copy,
+.hero-link,
+.hero-side-note,
+.scroll-cue {
+  text-shadow: 0 2px 12px rgb(0 0 0 / 88%);
 }
 
 .hero h1.shimmer {
@@ -1794,10 +1823,10 @@ button {
     background:
       linear-gradient(
         180deg,
-        rgb(25 17 12 / 43%) 0%,
-        rgb(31 20 13 / 12%) 35%,
-        rgb(30 18 11 / 13%) 66%,
-        rgb(44 34 30 / 60%) 86%,
+        rgb(17 11 8 / 65%) 0%,
+        rgb(20 13 9 / 43%) 35%,
+        rgb(20 13 9 / 40%) 66%,
+        rgb(32 23 18 / 68%) 86%,
         #2c221e 100%
       );
   }
@@ -2041,21 +2070,57 @@ button {
   line-height: 1.15;
 }
 
+.menu-brandmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+  color: #e1c28d;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.menu-brandmark img {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
 .menu-category ul {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.65rem 1rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.45rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .menu-category li {
-  position: relative;
-  padding-left: 0.85rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.65rem;
   color: #eee2d7;
   font-size: 0.78rem;
   line-height: 1.6;
+}
+
+.menu-price {
+  color: #d5bd9c;
+  font-size: 0.7rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.menu-note {
+  max-width: 68rem;
+  margin: 1.4rem auto 0;
+  color: #e1c28d;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  line-height: 1.7;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -2120,11 +2185,6 @@ button {
   }
 
   .menu-category ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.6rem 0.75rem;
-  }
-
-  .menu-category li {
-    font-size: 0.75rem;
+    grid-template-columns: minmax(0, 1fr);
   }
 }

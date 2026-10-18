@@ -1,32 +1,26 @@
-# Al Qaaf Yemeni Mandi
+# Taban Yemeni Mandi
 
-A responsive, Arabic-inspired restaurant website for Al Qaaf in Pandalam, Kerala. The design features a desert-inspired hero, a food-story card grid, a categorized menu, and restaurant contact and location details.
+A responsive restaurant website for Taban Yemeni Mandi. The menu, restaurant identity, contact details, and Pandalam map listing are based on the information shared for the restaurant.
 
 ## View the website
 
-- **Standalone preview:** [Open `Alqaaf-Preview.html`](./Alqaaf-Preview.html). This single file includes the page styles and images, so it can be opened directly in a browser or shared as a local demo.
-- **Source page:** [Open `index.html`](./index.html). The source page uses the separate stylesheet, script, and images in this project.
+- **Standalone preview:** Open [`Taban-Preview.html`](./Taban-Preview.html). This self-contained page includes its styles, script, and images and can be shared as a local demo.
+- **Source page:** Open [`index.html`](./index.html). Run it using a local web server (for example, VS Code Live Server) to load the separate stylesheet, script, and images.
 
-To run the source page locally, open the project folder in a local web server (for example, VS Code Live Server) and launch `index.html`.
+## Restaurant details
 
-## Restaurant links
+- **Name:** Taban Yemeni Mandi
+- **Map listing:** [TABAN YEMENI MANDI — Pandalam](https://www.google.com/maps/place/TABAN+YEMENI+MANDI+-PANDALAM/@9.2297836,76.6723223,16z/data=!4m15!1m8!3m7!1s0x3b06170e32ac5f1f:0x5e678337b495a4d4!2sTABAN+YEMENI+MANDI+-PANDALAM!8m2!3d9.2297836!4d76.6774721!10e9!16s%2Fg%2F11mldkrrt7!3m5!1s0x3b06170e32ac5f1f:0x5e678337b495a4d4!8m2!3d9.2297836!4d76.6774721!16s%2Fg%2F11mldkrrt7)
+- **Other location shown on the menu board:** Muttambalam, Kottarakkara
+- **Phone:** [+91 92079 06707](tel:+919207906707) · [+91 80898 36707](tel:+918089836707)
+- **Swiggy:** [Search for Taban Yemeni Mandi in Pandalam](https://www.swiggy.com/search?query=Taban%20Yemeni%20Mandi%20Pandalam)
 
-- [Order on Swiggy](https://www.swiggy.com/city/thiruvalla/alqaaf-mandi-pandalam-kulanada-rest1399971)
-- [Get directions in Google Maps](https://www.google.com/maps/search/?api=1&query=Al+Qaaf+Yemeni+Mandi%2C+Near+Estilo+Meadows%2C+MC+Road%2C+Kurumpala%2C+Pandalam%2C+Kerala+689501)
-- [Connect on WhatsApp](https://wa.me/919496688966)
-- [Call +91 94966 88966](tel:+919496688966)
-- [View Al Qaaf on Justdial](https://www.justdial.com/Pathanamthitta/Al-Qaaf-Near-Estilo-Meadows-Pandalam-Pandalam/9999PX468-X468-251030160053-B9V4_BZDET)
-
-**Address:** Near Estilo Meadows, MC Road, Kurumpala, Pandalam, Pathanamthitta, Kerala 689501
-
-**Cuisine:** Yemeni mandi, Al Faham, and barbeque
-
-**Hours:** Daily, 12:00 PM–10:30 PM
+The menu is transcribed from the supplied menu-board photo. Portions whose prices were obscured are marked “Please ask for price” rather than guessed. Opening hours and a direct Swiggy restaurant listing were not supplied.
 
 ## Project files
 
 - [`index.html`](./index.html) — website structure and content
 - [`styles.css`](./styles.css) — responsive styles and animation
 - [`script.js`](./script.js) — navigation, scroll effects, and page interactions
-- [`images/`](./images/) — hero, food, and carousel source images
-- [`Alqaaf-Preview.html`](./Alqaaf-Preview.html) — self-contained preview for easy local sharing
+- [`images/`](./images/) — restaurant mark, food, and carousel images
+- [`Taban-Preview.html`](./Taban-Preview.html) — self-contained preview
